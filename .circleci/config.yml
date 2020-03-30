@@ -24,3 +24,14 @@ jobs:
           destination: tr1
       - store_test_results:
           path: test-reports/
+
+   build:
+   deploy:
+     docker:
+       - image: circleci/python:3.6.2-stretch-browsers 
+     steps:
+       - checkout
+       - run:
+           name: Deploy Master to Heroku
+           command: |
+             git push https://heroku:09a6a2ce-8981-47f5-9bdb-3b1f24b901f3@git.heroku.com/my-notebook-site.git master

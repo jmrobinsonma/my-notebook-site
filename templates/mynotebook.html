@@ -16383,6 +16383,14 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>IT WORKS!!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://roadmap.sh/devops">DevOps Roadmap</a></p>
 
 </div>
@@ -16482,7 +16490,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_9_0.png"
+<img src="mynotebook_files/mynotebook_10_0.png"
 >
 </div>
 
@@ -16636,7 +16644,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_19_0.png"
+<img src="mynotebook_files/mynotebook_20_0.png"
 >
 </div>
 
@@ -16765,7 +16773,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_27_0.png"
+<img src="mynotebook_files/mynotebook_28_0.png"
 >
 </div>
 
@@ -17277,6 +17285,39 @@ if __name__ == '__main__':
 
 <pre><code>if __name__ == '__main__':
 app.run(debug=True)</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Basic UnitTest</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>import &lt;project&gt;
+import unittest
+
+
+class MyTestCase(unittest.TestCase):
+
+def setUp(self):
+    &lt;project&gt;.app.testing = True
+    self.app = &lt;project&gt;.app.test_client()
+
+def test_home(self):
+    response = self.app.get('/')
+    # Make your assertions
+    self.assertEqual(response.status_code, 200)
+
+if __name__ == "__main__":
+    unittest.main()</code></pre>
 
 </div>
 </div>
