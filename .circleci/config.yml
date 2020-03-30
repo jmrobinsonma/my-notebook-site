@@ -32,7 +32,10 @@ jobs:
       - run:
           command: |
             git push https://heroku:09a6a2ce-8981-47f5-9bdb-3b1f24b901f3@git.heroku.com/my-notebook-site.git master  
-      
+      - run:
+          command: |
+            heroku restart
+
 workflows:
   version: 2.1
   build-deploy:
