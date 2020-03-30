@@ -24,8 +24,7 @@ jobs:
           destination: tr1
       - store_test_results:
           path: test-reports/
-
-   build:
+  build:
    deploy:
      docker:
        - image: circleci/python:3.6.2-stretch-browsers 
