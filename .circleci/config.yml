@@ -25,12 +25,18 @@ jobs:
       - store_test_results:
           path: test-reports/
   deploy:
+    machine:
+        enabled: true
     steps:
       - checkout
       - run:
-          name: Deploy Master to Heroku
+          name: Setup Heroku
+          command: bash .circleci/setup-heroku.sh
+      - run:
           command: |
             git push https://heroku:09a6a2ce-8981-47f5-9bdb-3b1f24b901f3@git.heroku.com/my-notebook-site.git master  
+            sleep 5 # sleep for 5 seconds to wait for dynos
+            heroku restart
 
 workflows:
   version: 2.1
