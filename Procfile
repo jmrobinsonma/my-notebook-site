@@ -1,1 +1,2 @@
-web: gunicorn dep:jupyter_page
+web: gunicorn 
+jupyter_page:app
