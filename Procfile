@@ -1,2 +1,1 @@
-web: gunicorn 
-jupyter_page:app
+web: gunicorn -w 3 jupyter_page:app
