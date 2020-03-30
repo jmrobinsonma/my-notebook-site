@@ -1,15 +1,3 @@
-workflows:
-  version: 2.1
-  build-deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
-
 version: 2.1
 jobs:
   build:
@@ -36,10 +24,22 @@ jobs:
           destination: tr1
       - store_test_results:
           path: test-reports/
-deploy:
+  deploy:
     steps:
       - checkout
       - run:
           name: Deploy Master to Heroku
           command: |
             git push https://heroku:09a6a2ce-8981-47f5-9bdb-3b1f24b901f3@git.heroku.com/my-notebook-site.git master  
+
+workflows:
+  version: 2.1
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
