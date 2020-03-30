@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>doappnotebook</title>
+<title>mynotebook</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13032,8 +13032,8 @@ ul.typeahead-list  > li > a.pull-right {
 }
 div#notebook {
  font-family: "PT Sans", sans-serif;
- font-size: 11pt;
- line-height: 170%;
+ font-size: 130%;
+ line-height: 180%;
  color: #ebdbb2;
  -webkit-font-smoothing: antialiased !important;
  padding-top: 25px !important;
@@ -16299,6 +16299,7 @@ span.save_widget span.filename:hover {
     });
 </script>
     
+
     </style>
 
 
@@ -16367,7 +16368,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": false, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "740px", "left": "315px", "top": "88px", "width": "256px"}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -16481,7 +16482,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="doappnotebook_files/doappnotebook_9_0.png"
+<img src="mynotebook_files/mynotebook_9_0.png"
 >
 </div>
 
@@ -16493,7 +16494,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
@@ -16510,7 +16511,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -16612,7 +16613,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -16629,13 +16630,13 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="doappnotebook_files/doappnotebook_19_0.png"
+<img src="mynotebook_files/mynotebook_19_0.png"
 >
 </div>
 
@@ -16655,7 +16656,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
@@ -16672,7 +16673,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -16741,7 +16742,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -16758,13 +16759,13 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="doappnotebook_files/doappnotebook_27_0.png"
+<img src="mynotebook_files/mynotebook_27_0.png"
 >
 </div>
 
@@ -16787,7 +16788,7 @@ $( document ).ready(function(){
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Exec as root</p>
 <ul>
-<li>sudo docker exec -u 0 -it &lt;mycontainer&gt; &lt;bash or sh&gt;</li>
+<li>sudo docker exec -u 0 -it &lt;mycontainer&gt; &lt;bash(ubuntu) or sh(alpine)&gt; </li>
 </ul>
 
 </div>
@@ -17011,7 +17012,7 @@ sh -c "yarn install &amp;&amp; yarn run dev"</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
@@ -17028,7 +17029,7 @@ sh -c "yarn install &amp;&amp; yarn run dev"</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -17096,7 +17097,7 @@ sh -c "yarn install &amp;&amp; yarn run dev"</li>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
@@ -17113,7 +17114,7 @@ sh -c "yarn install &amp;&amp; yarn run dev"</li>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -17197,6 +17198,349 @@ package.domain = org.kvcalc</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://developer.android.com/studio/command-line/logcat?hl=zh-cn#Syntax">Logcat Command Line Tool</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="FLASK">FLASK<a class="anchor-link" href="#FLASK">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Basic Setup</p>
+<ul>
+<li>Create python virtual environment (python3 -m venv &lt;env_name&gt;)</li>
+<li>Activate virtual environment (source &lt;env_name&gt;/bin/activate)</li>
+<li>Create a basic python script without html        </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def hello():
+    return "Hello World!"
+if __name__ == '__main__':
+    app.run()</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Create a templates folder for .html files (mkdir templates)</li>
+<li>Create a basic python script with html</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>from flask import Flask, render_template
+app = Flask(__name__)
+@app.route('/')
+def home():
+    return render_template('&lt;name\&gt;.html')
+if __name__ == '__main__':
+    app.run()</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Debug Mode</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>if __name__ == '__main__':
+app.run(debug=True)</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DEPLOYING-FLASK-APP-TO-LINUX-SERVER">DEPLOYING FLASK APP TO LINUX SERVER<a class="anchor-link" href="#DEPLOYING-FLASK-APP-TO-LINUX-SERVER">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Setup ssh in Remote Server</p>
+<ul>
+<li># ssh root@&lt;ip_address&gt;</li>
+<li># apt update &amp;&amp; apt upgrade</li>
+<li># hostnamectl set-hostname &lt;name&gt;</li>
+<li># nano /etc/hosts (add ip and hostname)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>/etc/hosts</p>
+
+<pre><code>127.0.0.1       localhost
+&lt;ip_address\&gt;  &lt;hostname\&gt;
+ The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li># adduser &lt;username&gt;</li>
+<li># adduser &lt;username&gt; sudo</li>
+<li># ssh &lt;username&gt;@<ip_address></li>
+<li>\$ mkdir ~/.ssh</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Local Machine</p>
+<ul>
+<li>\$ ssh-keygen -b 4096</li>
+<li>\$ scp ~/.ssh/id_rsa.pub &lt;username&gt;@&lt;ip_address&gt;:~/.ssh/authorized_keys</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Remote Server</p>
+<ul>
+<li>\$ sudo chmod 700 ~/.ssh/</li>
+<li>\$ sudo chmod 600 ~/.ssh/*</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Disable Root on Remote Server</p>
+<ul>
+<li>\$ sudo nano /etc/ssh/sshd_config (PasswordAuthentication=no, PermitRootLogin=no)</li>
+<li>\$ sudo systemctl restart sshd</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Firewall for Remote Server</p>
+<ul>
+<li>\$ sudo apt install ufw</li>
+<li>\$ sudo ufw default allow outgoing</li>
+<li>\$ sudo ufw default deny incoming</li>
+<li>\$ sudo ufw allow ssh</li>
+<li>\$ sudo ufw allow 5000</li>
+<li>\$ sudo ufw enable</li>
+<li>\$ sudo ufw status</li>
+</ul>
+<p><em>After Installing Nginx</em></p>
+<ul>
+<li>\$ sudo ufw allow http/tcp</li>
+<li>\$ sudo ufw delete allow 5000</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create requirements.txt on Local Machine</p>
+<ul>
+<li>\$ pip3 freeze &gt; requirements.txt</li>
+<li>\$ scp -r ~/&lt;project_folder&gt; &lt;username&gt;@&lt;ip_address&gt;:~/</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Configure App on Remote Server</p>
+<ul>
+<li>\$ sudo apt install python3-pip</li>
+<li>\$ sudo apt install python3-venv</li>
+<li>\$ python3 -m venv &lt;&lt;project_folder&gt;/&lt;environment_name&gt;&gt;</li>
+<li>\$ cd &lt;project_folder&gt;</li>
+<li>\$ source &lt;environment_name&gt;/bin/activate</li>
+<li>\$ pip install -r requirements.txt</li>
+</ul>
+<p><em>Optional</em></p>
+<p>To create a json file for environment variables</p>
+<ul>
+<li>\$ sudo touch /etc/confg.json </li>
+<li>\$ sudo nano config.py <em>Update to access environment variables from config.json with .get() method</em></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Run Flask with Default server</p>
+<ul>
+<li>\$ export FLASK_APP=&lt;project_name&gt;.py</li>
+<li>\$ flask run --host=0.0.0.0</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Install Nginx and Gunicorn on Remote Server</p>
+<ul>
+<li>\$ sudo apt install nginx</li>
+<li>\$ pip install gunicorn</li>
+<li>\$ sudo rm /etc/nginx/sites-enabled/default</li>
+<li>\$ sudo nano /etc/nginx/sites-enabled/&lt;project_name&gt;</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nginx configuration &lt;project_name&gt;</p>
+
+<pre><code>server {
+    listen 80;
+    server_name &lt;ip_address&gt;;
+    location /static {
+         alias /home/&lt;username&gt;/&lt;project_folder&gt;/static;
+    }
+    location / {
+        proxy_pass http://localhost:8000;
+        include /etc/nginx/proxy_params;
+        proxy_redirect off;
+    }
+
+</code></pre>
+<p>}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Update Firewall</em></p>
+<ul>
+<li>\$ sudo ufw allow http/tcp</li>
+<li>\$ sudo ufw delete allow 5000</li>
+</ul>
+<p><em>Restart Nginx</em></p>
+<ul>
+<li>\$ sudo systemctl restart nginx</li>
+</ul>
+<p><em>Install Supervisor</em></p>
+<ul>
+<li>\$ sudo apt install supervisor</li>
+<li>\$ sudo nano /etc/supervisor/conf.d/&lt;project_name&gt;.conf</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&lt;project_name&gt;.conf</p>
+
+<pre><code>[program:jupyter_page]
+directory=/home/jmrobinson/jupyterpage
+command=/home/jmrobinson/jupyterpage/jupyter_env/bin/gunicorn -w 3 jupyter_page&gt;
+user=jmrobinson
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+stderr_logfile=/var/log/jupyterpage/jupyterpage.err.log
+stdout_logfile=/var/log/jupyterpage/jupyterpage.out.log</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Create Log Files</em></p>
+<ul>
+<li>\$ sudo touch /var/log/&lt;project_name&gt;/&lt;project_name&gt;.err.log</li>
+<li>\$ sudo touch /var/log/&lt;project_name&gt;/&lt;project_name&gt;.out.log</li>
+<li>\$ sudo supervisorctl reload</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Encrypt with LetsEncrypt/Certbot</p>
+<ul>
+<li>\$ sudo apt update</li>
+<li>\$ sudo apt install software-properties-common</li>
+<li>\$ sudo add-apt-repository universe</li>
+<li>\$ sudo add-apt-repository ppa:certbot/certbot</li>
+<li>\$ sudo apt update</li>
+<li>\$ sudo apt install python-certbot-nginx <em>The nginx config file may be updated to show domain instead of ip</em></li>
+<li>\$ sudo certbot --nginx</li>
+</ul>
+<p><em>Allow Https Traffic Through Firewall</em></p>
+<ul>
+<li>\$ sudo ufw allow https</li>
+</ul>
 
 </div>
 </div>
