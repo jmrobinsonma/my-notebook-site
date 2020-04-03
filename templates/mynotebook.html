@@ -16449,6 +16449,17 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>ctrl+a home</p>
+<p>ctrl+e end</p>
+<p>ctrl+u remove current line</p>
+<p>tree -p similar to ls -l but with lines, -i without lines and permissions</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Create all necessary folders in filepath</p>
 <ul>
 <li>mkdir -p</li>
@@ -16490,7 +16501,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_10_0.png"
+<img src="mynotebook_files/mynotebook_11_0.png"
 >
 </div>
 
@@ -16644,7 +16655,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_20_0.png"
+<img src="mynotebook_files/mynotebook_21_0.png"
 >
 </div>
 
@@ -16773,7 +16784,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_28_0.png"
+<img src="mynotebook_files/mynotebook_29_0.png"
 >
 </div>
 
@@ -17582,6 +17593,73 @@ stdout_logfile=/var/log/jupyterpage/jupyterpage.out.log</code></pre>
 <ul>
 <li>\$ sudo ufw allow https</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="SQLALCHEMY">SQLALCHEMY<a class="anchor-link" href="#SQLALCHEMY">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Basic Template</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>from sqlalchemy import create_engine, Column, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, relationship
+
+Base = declarative_base()
+class Posts(Base):
+
+    __tablename__ = "Search-results"
+
+    timing = Column(String(120), unique=False, nullable=False,   primary_key=True)
+    title_text = Column(String(120), unique=False, nullable=False)
+    price = Column(String(120), unique=False, nullable=False)
+    link = Column(String(120), unique=False, nullable=False)
+
+engine = create_engine('sqlite:///search_results.db')  #echo=True for output to console
+Base.metadata.create_all(bind=engine)
+Session = sessionmaker(bind=engine)
+session = Session()
+
+session.add(post)
+session.commit()
+session.close()</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Catch IntegrityError</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>   from sqlalchemy import exc
+
+   try:
+       pass
+   except exc.IntegrityError as e:
+       pass</code></pre>
 
 </div>
 </div>
