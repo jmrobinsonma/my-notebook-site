@@ -17659,7 +17659,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 Base = declarative_base()
 class Posts(Base):
 
-    __tablename__ = "Search-results"
+    __tablename__ = "base"
 
     timing = Column(String(120), unique=False, nullable=False,   primary_key=True)
     title_text = Column(String(120), unique=False, nullable=False)
