@@ -16383,14 +16383,6 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>IF YOU'RE READING THIS, MY PIPELINE WORKS!!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://roadmap.sh/devops">DevOps Roadmap</a></p>
 
 </div>
@@ -16442,7 +16434,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="UBUNTU">UBUNTU<a class="anchor-link" href="#UBUNTU">&#182;</a></h1>
+<h1 id="UBUNTU/LINUX">UBUNTU/LINUX<a class="anchor-link" href="#UBUNTU/LINUX">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -16501,7 +16493,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_11_0.png"
+<img src="mynotebook_files/mynotebook_10_0.png"
 >
 </div>
 
@@ -16571,7 +16563,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://askubuntu.com/questions/844876/how-do-you-copy-a-directory-and-its-contents-to-a-new-location-under-a-new-direc/844880">Copy Directory</a></p>
+<p><a href="https://askubuntu.com/questions/844876/how-do-you-copy-a-directory-and-its-contents-to-a-new-location-under-a-new-direc/844880">Backup/Copy Directory</a></p>
 
 </div>
 </div>
@@ -16580,6 +16572,42 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://www.digitalocean.com/community/questions/copy-ssh-key-to-clipboard">Copy SSH key to clipboard</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>CRONTAB</p>
+<ul>
+<li>Flags(-l:list, -r:remove, -e:edit)</li>
+<li>Use shell scripts(&lt;scriptname.sh&gt;</li>
+<li>Include "shebang" (#!bin/bash) as first line of shell script</li>
+<li>Export environment variables in shell script</li>
+<li>Use absolute path(/home/user/path/to/*)</li>
+<li>Use "." in place of "source" command for crontab</li>
+<li>Give file 744 permission(chmod 744 <em>.</em>)</li>
+<li>Use "MAILTO='foo@bar.net'" as first line in crontab to receive notification of every cronjob</li>
+<li>Cron logs to /var/log/syslog</li>
+<li>For cron specific logs(grep CRON /var/log/syslog)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://devanswers.co/configure-postfix-to-use-gmail-smtp-on-ubuntu-16-04-digitalocean-droplet/">How to configure Postfix to use Gmail SMTP on Ubuntu 18.04 / 19.10</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Remove all remnants of an install(sudo apt purge &lt;app&gt;)</p>
 
 </div>
 </div>
@@ -16655,7 +16683,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_21_0.png"
+<img src="mynotebook_files/mynotebook_23_0.png"
 >
 </div>
 
@@ -16784,7 +16812,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="mynotebook_files/mynotebook_29_0.png"
+<img src="mynotebook_files/mynotebook_31_0.png"
 >
 </div>
 
@@ -17631,7 +17659,8 @@ class Posts(Base):
     link = Column(String(120), unique=False, nullable=False)
 
 engine = create_engine('sqlite:///search_results.db')  #echo=True for output to console
-Base.metadata.create_all(bind=engine)
+                             # ^^^ or ////home/user/path/to/folder
+Base.metadata.create_all(bind=engine)            
 Session = sessionmaker(bind=engine)
 session = Session()
 
@@ -17659,7 +17688,7 @@ session.close()</code></pre>
    try:
        pass
    except exc.IntegrityError as e:
-       pass</code></pre>
+       session.rollback()</code></pre>
 
 </div>
 </div>
